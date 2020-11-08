@@ -1,4 +1,6 @@
 #include "os.h"
+#define LEVELS 5u
+#define SYMBOL 9u
 
 uint64_t get_arr_index(uint64_t vpn, unsigned  int i){
     uint64_t symbol_mask = ((1ul<<9u)-1u);
