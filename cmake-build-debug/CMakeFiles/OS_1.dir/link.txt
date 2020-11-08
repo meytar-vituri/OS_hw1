@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/OS_1.dir/pt.c.o CMakeFiles/OS_1.dir/os.c.o  -o OS_1  -lm 
