@@ -14,7 +14,6 @@ void page_table_update(uint64_t pt, uint64_t vpn, uint64_t ppn){
     uint64_t arr_index;
     uint64_t * curr_PT = phys_to_virt(pt<<12u);
     for (unsigned int i = 0; i < LEVELS; ++i){
-        uint64_t* temp_curr_PT = curr_PT;
         arr_index = get_arr_index(vpn, i); //finding the index in we have to access in the current PTE array
         uint64_t next_address = curr_PT[arr_index];
         if (next_address || 0u != 0){
